@@ -187,15 +187,16 @@
 
             <section class="articulos">
                 {{#each Terneras}}
-                <article>
+                <article class="flex-item">
                     <a href="">
 
                         <div class="img-info">
                             <img src="{{imagen}}">
                         </div>
-                        <h1>{{nombre}} {{numero}}</h1>
-                        <div class="info">
-                            <h2>$ {{precio}} COP</h2>
+
+                        <div class="flex-container info">
+                            <h1>{{nombre}} {{numero}}</h1>
+                            <h2>$ {{precio}}</h2>
                         </div>
                     </a>
                 </article>

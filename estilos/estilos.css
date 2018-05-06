@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-  box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041), 0 6px 20px 0 rgba(83, 83, 83, 0.041);
+  box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041);
 }
 
 nav .logo {
@@ -406,6 +406,58 @@ footer .sombra .fab:hover {
 
 .contenidoVA .der section div:last-child div div a .fas:hover {
   opacity: 1;
+}
+
+.contenidoVA .der .articulos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.contenidoVA .der .articulos article {
+  width: 260px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+  transition: all .4s;
+}
+
+.contenidoVA .der .articulos article a {
+  text-decoration: none;
+}
+
+.contenidoVA .der .articulos article a .img-info {
+  background-color: #FFF;
+  width: 256px;
+  height: 180px;
+}
+
+.contenidoVA .der .articulos article a .img-info img {
+  width: 100%;
+}
+
+.contenidoVA .der .articulos article a .info {
+  padding-top: 2px;
+  padding-bottom: 15px;
+  margin: 0 15px;
+}
+
+.contenidoVA .der .articulos article a .info h1 {
+  font-size: 15px;
+}
+
+.contenidoVA .der .articulos article a .info h2 {
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.contenidoVA .der .articulos article:hover {
+  box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.7);
 }
 
 .flex-cont-index {

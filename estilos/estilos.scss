@@ -25,7 +25,7 @@ body {
 }
 
 nav {
-    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041), 0 6px 20px 0 rgba(83, 83, 83, 0.041);
+    box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041);
     .logo {
         padding: 1.2% 6%;
         img {
@@ -387,13 +387,59 @@ footer {
                                 font-size: 20px;
                                 opacity: .4;
                             }
-                            .fas:hover{
+                            .fas:hover {
                                 opacity: 1;
                             }
                         }
-                       
                     }
                 }
+            }
+        }
+        .articulos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: flex-start;
+            align-items: flex-start;
+            width: 100vw;
+            box-sizing: border-box;
+            article {
+                width: 260px;
+                margin: 10px;
+                box-sizing: border-box;
+                box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+
+transition: all .4s;
+                a {
+                    text-decoration: none;
+                    .img-info {
+                        background-color: #FFF;
+                        width: 256px;
+                        height: 180px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .info {
+                        padding-top:2px; 
+                        padding-bottom: 15px;
+                        margin:0 15px;
+                        
+                        h1 {
+                            font-size: 15px;
+                        }
+                        h2 {
+                            font-size: 15px;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+
+            article:hover{
+                box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.7);
+
             }
         }
     }
