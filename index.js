@@ -18,7 +18,7 @@ app.use(express.static('public'));
 MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     if (err) throw err;
 
-    db = client.db('TallerDos');
+    db = client.db('ElSaman');
 
     // Iniciar servidor
     app.listen(5000);
@@ -30,6 +30,15 @@ app.get('/index', (req, res) => {
     res.render('index');
 });
 
-app.get('/genetica',(req,res) =>{
-    res.render('visualizacionArticulos');
+
+app.get('/genetica', (req, res) => {
+
+    var carroCollection = db.collection('Terneras').find();
+
+    carroCollection.toArray((err, result) => {
+
+        res.render('visualizacionArticulos', {
+            carros: result
+        });
+    })
 });

@@ -1,0 +1,45 @@
+{
+    "terneras":[
+        {
+            "nombre": "Alana ",
+            "numero": "502",
+            "precio": "250.000"
+        }
+        ,
+        {
+            "nombre": "Lupita",
+            "numero": "307",
+            "precio": "480.900"
+        }
+        ,
+        {
+            "nombre": "Duquesa",
+            "numero": "460",
+            "precio": "486.000"
+        }
+        ,
+        {
+            "nombre": "Chispa",
+            "numero": "215",
+            "precio": "657.000"
+        }
+        ,
+        {
+            "nombre": "Cariñosa",
+            "numero": "354",
+            "precio": "876.000"
+        }
+        ,
+        {
+            "nombre": "Manchas",
+            "numero": "654",
+            "precio": "154.000"
+        }
+        ,
+        {
+            "nombre": "Primavera",
+            "numero": "123",
+            "precio": "796.000"
+        }
+    ]
+}
