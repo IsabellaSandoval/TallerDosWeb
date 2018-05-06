@@ -29,3 +29,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 app.get('/index', (req, res) => {
     res.render('index');
 });
+
+app.get('/genetica',(req,res) =>{
+    res.render('visualizacionArticulos');
+});
