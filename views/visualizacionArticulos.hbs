@@ -56,21 +56,134 @@
     </header>
 
 
-    <section class="flex-container contenidoVA">
-        <section class="flex-item izq">
-            <article class=" flex-cont-index ver">
-                <div class="flex-item">
-                    <p>Ocultar Filtros</p>
-                </div>
-                <div class="flex-item">
-                    <button class="verFiltros">
-                        <i class="fas fa-caret-up"></i>
-                    </button>
+    <section class="flex-cont-index contenidoVA">
 
-                </div>
+        <section class="flex-item izq">
+
+            <article>
+                <!-- Ver tipo -->
+
+                <article>
+                    <div class="flex-cont-index">
+                        <div class="flex-item">
+                            <p>Ver Filtros</p>
+                        </div>
+
+                        <div class="flex-item">
+                            <button class="verFiltros">
+                                <i class="fas fa-caret-up"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Filtro por tipos -->
+                <article>
+                    <div class="flex-cont-index">
+                        <div class="flex-item">
+                            <p>Tipo</p>
+                        </div>
+
+                        <div class="flex-item">
+                            <button class="verFiltros">
+                                <i class="fas fa-caret-up"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tipo">
+                        <label class="container">Todos
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Embrión
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Ternera
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Novilla
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Vaca
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+
+                </article>
+
+                <!-- Filtro por edad -->
+                <article class="flex-cont-index ver">
+                    <div class="flex-item">
+                        <p>Edad</p>
+                    </div>
+
+                    <div class="flex-item">
+                        <button class="verFiltros">
+                            <i class="fas fa-caret-up"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- Filtro por precio -->
+                <article class="flex-cont-index ver">
+                    <div class="flex-item">
+                        <p>Precio</p>
+                    </div>
+
+                    <div class="flex-item">
+                        <button class="verFiltros">
+                            <i class="fas fa-caret-up"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+
+
+
             </article>
         </section>
-        <section class="flex-item der">asdadasd</section>
+
+        <section class="flex-item der">
+            <section class="flex-container">
+                <div class="flex-item">
+                    <p>GENÉTICA / Teneras</p>
+                </div>
+                
+                <div class="flex-item">
+
+                    <div class="flex-cont-index">
+                        <p>Ordenar:</p>
+                        <select>
+                            <option value="asc">Precio Ascendente</option>
+                            <option value="des">Precio Descendente</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="flex-item">
+                    <div class="flex-cont-index">
+                        <p>Ver</p>
+                        <div>
+                            <a><i class="fas fa-mars"></i></a>
+                            <a><i class="fas fa-venus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </section>
     </section>
 
 
