@@ -157,7 +157,7 @@
                 <div class="flex-item">
                     <p>GENÉTICA / Teneras</p>
                 </div>
-                
+
                 <div class="flex-item">
 
                     <div class="flex-cont-index">
@@ -174,11 +174,33 @@
                     <div class="flex-cont-index">
                         <p>Ver</p>
                         <div>
-                            <a><i class="fas fa-mars"></i></a>
-                            <a><i class="fas fa-venus"></i></a>
+                            <a>
+                                <i class="fas fa-mars"></i>
+                            </a>
+                            <a>
+                                <i class="fas fa-venus"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="articulos">
+                {{#each Terneras}}
+                <article>
+                    <a href="">
+
+                        <div class="img-info">
+                            <img src="{{imagen}}">
+                        </div>
+                        <h1>{{nombre}} {{numero}}</h1>
+                        <div class="info">
+                            <h2>$ {{precio}} COP</h2>
+                        </div>
+                    </a>
+                </article>
+                {{/each}}
+
             </section>
 
 

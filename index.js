@@ -33,12 +33,12 @@ app.get('/index', (req, res) => {
 
 app.get('/genetica', (req, res) => {
 
-    var carroCollection = db.collection('Terneras').find();
+    var terneraCollection = db.collection('Terneras').find();
 
-    carroCollection.toArray((err, result) => {
+    terneraCollection.toArray((err, result) => {
 
         res.render('visualizacionArticulos', {
-            carros: result
+            Terneras: result
         });
     })
 });
