@@ -41,9 +41,9 @@
                 <div class="dropdown">
                     <button class="dropbtn">GENÉTICA</button>
                     <div class="dropdown-content">
-                        <a href="/genetica">Embriones</a>
-                        <a href="/genetica">Terneras</a>
-                        <a href="/genetica">Novillas</a>
+                        <a href="/genetica/terneras">Embriones</a>
+                        <a href="/genetica/terneras">Terneras</a>
+                        <a href="/genetica/terneras">Novillas</a>
                     </div>
                 </div>
 
@@ -185,15 +185,16 @@
                 </div>
             </section>
 
-            <section class="articulos">
+            <section class="productos">
+
                 {{#each Terneras}}
-                <article class="flex-item">
-                    <a href="">
+                <article>
+                    <a href="/genetica/terneras/{{_id}}">
 
                         <div class="img-info">
                             <img src="{{imagen}}">
                         </div>
-
+                        <h1>{{marca}} {{modelo}}</h1>
                         <div class="flex-container info">
                             <h1>{{nombre}} {{numero}}</h1>
                             <h2>$ {{precio}}</h2>
@@ -201,12 +202,14 @@
                     </a>
                 </article>
                 {{/each}}
-
             </section>
 
 
-
         </section>
+
+
+
+    </section>
     </section>
 
 

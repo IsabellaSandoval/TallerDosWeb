@@ -30,15 +30,33 @@ app.get('/index', (req, res) => {
     res.render('index');
 });
 
+// Dirección de visualización de productos de Alquiler de Vehículos
+app.get('/genetica/terneras', (req, res) => {
 
-app.get('/genetica', (req, res) => {
+    var ternerasCollection = db.collection('Terneras').find();
 
-    var terneraCollection = db.collection('Terneras').find();
+    ternerasCollection.toArray((err, result) => {
 
-    terneraCollection.toArray((err, result) => {
-
-        res.render('visualizacionArticulos', {
+        res.render('VisualizacionArticulos', {
             Terneras: result
         });
     })
+});
+
+//Dirección de visualización de cada producto
+app.get('/genetica/terneras/:id', (req, res) => {
+
+
+    var ternerasCollection = db.collection('Terneras')
+        .find({
+            _id: new ObjectID(req.params.id)
+        })
+        .toArray((err, result) => {
+            // console.log(result[0]);
+            res.render('productos', {
+                Ternera: result[0]
+
+            });
+        });
+
 });

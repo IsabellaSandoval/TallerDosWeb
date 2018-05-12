@@ -24,6 +24,13 @@ body {
     background-color: $blancoA;
 }
 
+header {
+    backGROUND: $blancoA;
+    position: fixed;
+    z-index: 80000000;
+    width: 100%;
+}
+
 nav {
     box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041);
     .logo {
@@ -91,6 +98,7 @@ nav {
     padding-top: 30px;
     margin: 0;
     div {
+        margin-top: 145px;
         img {
             width: 100%;
         }
@@ -220,8 +228,7 @@ footer {
     background: $naranja;
     color: $blancoA;
     letter-spacing: 3px;
-    text-align: center;
-    margin-top: -6px;
+    text-align: center; //margin-top: -6px;
     .contacto {
         padding-top: 40px;
     }
@@ -280,6 +287,7 @@ footer {
 .contenidoVA {
     padding: 20px 0;
     .izq {
+        margin-top: 140px;
         width: 20%;
         article {
             article {
@@ -354,7 +362,11 @@ footer {
     }
     .der {
         width: 80%;
+        margin-top: 140px;
         section {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 15px;
             div:first-child {
                 p {
                     color: $grisO;
@@ -395,55 +407,57 @@ footer {
                 }
             }
         }
-        .articulos {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-content: flex-start;
-            align-items: flex-start;
-            width: 100vw;
-            box-sizing: border-box;
-            article {
-                width: 260px;
-                margin: 10px;
-                box-sizing: border-box;
-                box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
+    }
+}
 
-transition: all .4s;
-                a {
-                    text-decoration: none;
-                    .img-info {
-                        background-color: #FFF;
-                        width: 256px;
-                        height: 180px;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    .info {
-                        padding-top:2px; 
-                        padding-bottom: 15px;
-                        margin:0 15px;
-                        
-                        h1 {
-                            font-size: 15px;
-                        }
-                        h2 {
-                            font-size: 15px;
-                            letter-spacing: 0;
-                        }
-                    }
+.productos {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    justify-content: space-between;
+    article {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        float: left;
+        width: 300px;
+        height: 240px;
+        margin-bottom: 20px;
+        margin-right: 2.5%;
+        opacity: .85;
+        a {
+            text-decoration: none;
+            .img-info {
+                width: 300px;
+                img {
+                    width: 100%;
                 }
             }
-
-            article:hover{
-                box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.7);
-
+            .info {
+                margin: 0;
+                padding: 0 15px;
+                h1 {
+                    margin-top: 4px;
+                    font-size: 15px;
+                    color: $naranja;
+                }
+                h2 {
+                    margin-top: 4px;
+                    font-size: 15px;
+                    color: $negro;
+                    letter-spacing: 0;
+                }
             }
         }
     }
+    article:hover {
+        box-shadow: 5px 5px 5px 0px rgba(247, 147, 30, 0.5);
+        opacity: 1;
+    }
 }
+
+/* Visualización de Cada Ternera */
+
+
 
 .flex-cont-index {
     display: flex;

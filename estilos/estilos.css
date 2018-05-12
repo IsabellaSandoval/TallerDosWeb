@@ -12,6 +12,13 @@ body {
   background-color: #FCFCFC;
 }
 
+header {
+  backGROUND: #FCFCFC;
+  position: fixed;
+  z-index: 80000000;
+  width: 100%;
+}
+
 nav {
   box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.041);
 }
@@ -81,6 +88,10 @@ nav .logo img {
   padding-top: 30px;
   margin: 0;
   cursor: pointer;
+}
+
+.banner div {
+  margin-top: 145px;
 }
 
 .banner div img {
@@ -221,7 +232,6 @@ footer {
   color: #FCFCFC;
   letter-spacing: 3px;
   text-align: center;
-  margin-top: -6px;
 }
 
 footer .contacto {
@@ -290,6 +300,7 @@ footer .sombra .fab:hover {
 }
 
 .contenidoVA .izq {
+  margin-top: 140px;
   width: 20%;
 }
 
@@ -375,6 +386,13 @@ footer .sombra .fab:hover {
 
 .contenidoVA .der {
   width: 80%;
+  margin-top: 140px;
+}
+
+.contenidoVA .der section {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contenidoVA .der section div:first-child p {
@@ -408,58 +426,60 @@ footer .sombra .fab:hover {
   opacity: 1;
 }
 
-.contenidoVA .der .articulos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.productos {
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
   justify-content: space-between;
-  align-content: flex-start;
-  align-items: flex-start;
-  width: 100vw;
-  box-sizing: border-box;
 }
 
-.contenidoVA .der .articulos article {
-  width: 260px;
-  margin: 10px;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.2);
-  transition: all .4s;
+.productos article {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 300px;
+  height: 240px;
+  margin-bottom: 20px;
+  margin-right: 2.5%;
+  opacity: .85;
 }
 
-.contenidoVA .der .articulos article a {
+.productos article a {
   text-decoration: none;
 }
 
-.contenidoVA .der .articulos article a .img-info {
-  background-color: #FFF;
-  width: 256px;
-  height: 180px;
+.productos article a .img-info {
+  width: 300px;
 }
 
-.contenidoVA .der .articulos article a .img-info img {
+.productos article a .img-info img {
   width: 100%;
 }
 
-.contenidoVA .der .articulos article a .info {
-  padding-top: 2px;
-  padding-bottom: 15px;
-  margin: 0 15px;
+.productos article a .info {
+  margin: 0;
+  padding: 0 15px;
 }
 
-.contenidoVA .der .articulos article a .info h1 {
+.productos article a .info h1 {
+  margin-top: 4px;
   font-size: 15px;
+  color: #F7931E;
 }
 
-.contenidoVA .der .articulos article a .info h2 {
+.productos article a .info h2 {
+  margin-top: 4px;
   font-size: 15px;
+  color: #474747;
   letter-spacing: 0;
 }
 
-.contenidoVA .der .articulos article:hover {
-  box-shadow: 0 4px 8px 0 rgba(85, 85, 85, 0.7);
+.productos article:hover {
+  box-shadow: 5px 5px 5px 0px rgba(247, 147, 30, 0.5);
+  opacity: 1;
 }
 
+/* Visualización de Cada Ternera */
 .flex-cont-index {
   display: flex;
   flex-direction: row;
