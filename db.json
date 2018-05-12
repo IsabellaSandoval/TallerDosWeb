@@ -3,49 +3,55 @@
         {
             "nombre": "Alana ",
             "numero": "502",
-            "precio": "250.000",
-            "imagen": "/imagenes/a.png"
+            "precio": 250000,
+            "imagen": "/imagenes/a.png",
+            "categoria": "",
+            "edad":"Ternera",
+            "sexo":"",
+            "nacimiento":"",
+            "semenDisp": "",
+            "descripcion":""
         }
         ,
         {
             "nombre": "Lupita",
             "numero": "307",
-            "precio": "480.900",
-            "imagen": "/imagenes/a.png"
+            "precio": 480900,
+            "imagen": "/imagenes/b.jpg"
         }
         ,
         {
             "nombre": "Duquesa",
             "numero": "460",
-            "precio": "486.000",
-            "imagen": "/imagenes/a.png"
+            "precio": 486000,
+            "imagen": "/imagenes/c.jpg"
         }
         ,
         {
             "nombre": "Chispa",
             "numero": "215",
-            "precio": "657.000",
+            "precio": 657000,
             "imagen": "/imagenes/a.png"
         }
         ,
         {
             "nombre": "Cariñosa",
             "numero": "354",
-            "precio": "876.000",
-            "imagen": "/imagenes/a.png"
+            "precio": 876000,
+            "imagen": "/imagenes/b.jpg"
         }
         ,
         {
             "nombre": "Manchas",
             "numero": "654",
-            "precio": "154.000",
-            "imagen": "/imagenes/a.png"
+            "precio": 154000,
+            "imagen": "/imagenes/c.jpg"
         }
         ,
         {
             "nombre": "Primavera",
             "numero": "123",
-            "precio": "796.000",
+            "precio": 796000,
             "imagen": "/imagenes/a.png"
         }
     ]

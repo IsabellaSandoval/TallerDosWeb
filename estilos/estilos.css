@@ -232,10 +232,7 @@ footer {
   color: #FCFCFC;
   letter-spacing: 3px;
   text-align: center;
-}
-
-footer .contacto {
-  padding-top: 40px;
+  height: 200px;
 }
 
 footer section {
@@ -243,8 +240,15 @@ footer section {
   width: 100%;
 }
 
+footer .contacto {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+
 footer form {
-  margin-bottom: 35px;
+  background: #F7931E;
+  margin-bottom: 30px;
 }
 
 footer form input[type=text] {
@@ -480,6 +484,108 @@ footer .sombra .fab:hover {
 }
 
 /* Visualización de Cada Ternera */
+.atras {
+  padding-top: 150px;
+  margin-bottom: 10px;
+}
+
+.atras div a {
+  color: #474747;
+  text-decoration: none;
+}
+
+.atras div a .fas {
+  margin-right: 5px;
+}
+
+.atras div:hover {
+  font-weight: bold;
+}
+
+.atras div:hover a {
+  color: #F7931E;
+}
+
+.produc .imagenDet {
+  width: 60%;
+  margin-top: -8%;
+}
+
+.produc .imagenDet div {
+  width: 90vh;
+  height: 55vh;
+  background-size: cover;
+}
+
+.produc .infoDet {
+  width: 40%;
+  display: inline;
+  margin-top: 4%;
+  margin-bottom: 14%;
+}
+
+.produc .infoDet div {
+  padding-right: 70px;
+}
+
+.produc .infoDet div h1 {
+  color: #F7931E;
+  font-weight: bold;
+  font-family: "Nunito", "sans-serif";
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.produc .infoDet div p {
+  color: #474747;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.produc .infoDet div p strong {
+  font-weight: bold;
+}
+
+.produc .infoDet div a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #F7931E;
+  transition: all .2s;
+}
+
+.produc .infoDet div a:hover {
+  text-decoration: underline;
+}
+
+.produc .infoDet div .precio {
+  font-family: "Nunito", "sans-serif";
+  font-size: 30px;
+  color: #474747;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.produc .infoDet .visita {
+  margin-bottom: 20px;
+}
+
+.produc .infoDet .visita a {
+  border: none;
+}
+
+.produc .infoDet .visita a div {
+  font-weight: 300;
+  background: #F7931E;
+  color: #fff;
+  font-family: "Nunito", "sans-serif";
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+}
+
 .flex-cont-index {
   display: flex;
   flex-direction: row;

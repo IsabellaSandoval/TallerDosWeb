@@ -228,16 +228,20 @@ footer {
     background: $naranja;
     color: $blancoA;
     letter-spacing: 3px;
-    text-align: center; //margin-top: -6px;
-    .contacto {
-        padding-top: 40px;
-    }
+    text-align: center;
+    height: 200px;
     section {
         margin: 0;
         width: 100%
     }
+    .contacto {
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
     form {
-        margin-bottom: 35px;
+        background: $naranja;
+        margin-bottom: 30px;
         input[type=text] {
             letter-spacing: 3px;
             width: 30%;
@@ -457,7 +461,97 @@ footer {
 
 /* Visualización de Cada Ternera */
 
+.atras {
+    padding-top: 150px;
+    margin-bottom: 10px;
+    div {
+        a {
+            color: $negro;
+            text-decoration: none;
+            .fas {
+                margin-right: 5px;
+            }
+        }
+    }
+    div:hover {
+        font-weight: bold;
+        a {
+            color: $naranja;
+        }
+    }
+}
 
+.produc {
+    .imagenDet {
+        width: 60%;
+        margin-top: -8%;
+        div {
+            width: 90vh;
+            height:55vh;
+            background-size: cover;
+            
+        }
+    }
+    .infoDet {
+        width: 40%;
+        display: inline;
+        margin-top: 4%;
+        margin-bottom: 14%;
+        div {
+            padding-right: 70px;
+            h1 {
+                color: $naranja;
+                font-weight: bold;
+                font-family: $nunito;
+                text-transform: capitalize;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            p {
+                color: $negro;
+                font-size: 17px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                strong {
+                    font-weight: bold;
+                }
+            }
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                color: $naranja;
+                transition: all .2s;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .precio {
+                font-family: $nunito;
+                font-size: 30px;
+                color: $negro;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+        }
+        .visita {
+            margin-bottom: 20px;
+            a {
+                border: none;
+                div{
+                    font-weight: 300;
+                    background: $naranja;
+                    color: #fff;
+                    font-family: $nunito;
+                    padding: 10px;
+                    width: 30%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
 
 .flex-cont-index {
     display: flex;
