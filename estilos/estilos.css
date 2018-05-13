@@ -39,6 +39,7 @@ nav .logo img {
   border: none;
   background: #FCFCFC;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .dropdown {
@@ -327,7 +328,7 @@ footer .sombra .fab:hover {
   padding: 0;
 }
 
-.contenidoVA .izq .tipo {
+.contenidoVA .izq article .tipo {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -344,7 +345,7 @@ footer .sombra .fab:hover {
   /* Show the indicator (dot/circle) when checked */
 }
 
-.contenidoVA .izq .tipo .container {
+.contenidoVA .izq article .tipo .container {
   display: block;
   position: relative;
   padding-left: 30px;
@@ -354,13 +355,13 @@ footer .sombra .fab:hover {
   color: #727272;
 }
 
-.contenidoVA .izq .tipo .container input {
+.contenidoVA .izq article .tipo .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.contenidoVA .izq .tipo .checkmark {
+.contenidoVA .izq article .tipo .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -370,22 +371,54 @@ footer .sombra .fab:hover {
   border: solid 2px #727272;
 }
 
-.contenidoVA .izq .tipo .container:hover input ~ .checkmark {
+.contenidoVA .izq article .tipo .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-.contenidoVA .izq .tipo .container input:checked ~ .checkmark {
+.contenidoVA .izq article .tipo .container input:checked ~ .checkmark {
   background-color: #727272;
 }
 
-.contenidoVA .izq .tipo .checkmark:after {
+.contenidoVA .izq article .tipo .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.contenidoVA .izq .tipo .container input:checked ~ .checkmark:after {
+.contenidoVA .izq article .tipo .container input:checked ~ .checkmark:after {
   display: block;
+}
+
+.contenidoVA .izq article .rango {
+  padding: 20px 0;
+}
+
+.contenidoVA .izq article .rango div:nth-child(2) {
+  padding-right: 80px;
+}
+
+.contenidoVA .izq article .rango div:nth-child(2) p {
+  margin: 15px 10px;
+}
+
+.contenidoVA .izq article .rango div:last-child {
+  text-align: center;
+  margin-right: 5%;
+}
+
+.contenidoVA .izq article .rango div:last-child button {
+  font-size: 15px;
+  background: #F7931E;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+.contenidoVA .izq article .rango div:last-child button:last-child {
+  margin-right: 80px;
+}
+
+.contenidoVA .izq article .rango div:last-child button:hover {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .contenidoVA .der {

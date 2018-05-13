@@ -49,6 +49,7 @@ nav {
     border: none;
     background: $blancoA;
     transition: all $tiempo;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -309,58 +310,84 @@ footer {
             article:first-child {
                 padding: 0;
             }
-        }
-        .tipo {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-            padding-left: 8%;
-            padding-top: 10px;
-            .container {
-                display: block;
-                position: relative;
-                padding-left: 30px;
-                margin-bottom: 6px;
-                cursor: pointer;
-                user-select: none;
-                color: $grisO;
+            .tipo {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                align-items: flex-start;
+                padding-left: 8%;
+                padding-top: 10px;
+                .container {
+                    display: block;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 6px;
+                    cursor: pointer;
+                    user-select: none;
+                    color: $grisO;
+                }
+                /* Hide the browser's default radio button */
+                .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                /* Create a custom radio button */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    border: solid 2px $grisO;
+                }
+                /* On mouse-over, add a grey background color */
+                .container:hover input~.checkmark {
+                    background-color: #ccc;
+                }
+                /* When the radio button is checked, add a blue background */
+                .container input:checked~.checkmark {
+                    background-color: $grisO;
+                }
+                /* Create the indicator (the dot/circle - hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                /* Show the indicator (dot/circle) when checked */
+                .container input:checked~.checkmark:after {
+                    display: block;
+                }
             }
-            /* Hide the browser's default radio button */
-            .container input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-            }
-            /* Create a custom radio button */
-            .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 10px;
-                width: 10px;
-                border-radius: 50%;
-                border: solid 2px $grisO;
-            }
-            /* On mouse-over, add a grey background color */
-            .container:hover input~.checkmark {
-                background-color: #ccc;
-            }
-            /* When the radio button is checked, add a blue background */
-            .container input:checked~.checkmark {
-                background-color: $grisO;
-            }
-            /* Create the indicator (the dot/circle - hidden when not checked) */
-            .checkmark:after {
-                content: "";
-                position: absolute;
-                display: none;
-            }
-            /* Show the indicator (dot/circle) when checked */
-            .container input:checked~.checkmark:after {
-                display: block;
+            .rango {
+                padding: 20px 0;
+                div:nth-child(2) {
+                    padding-right: 80px;
+                    p {
+                        margin: 15px 10px;
+                    }
+                }
+                div:last-child {
+                    text-align: center;
+                    margin-right: 5%;
+                    button {
+                        font-size: 15px;
+                        background: $naranja;
+                        color: #fff;
+                        padding: 4px 10px;
+                    }
+                    button:last-child {
+                        margin-right: 80px;
+                    }
+                    button:hover{
+                        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+
+                    }
+                }
             }
         }
     }
@@ -487,9 +514,8 @@ footer {
         margin-top: -8%;
         div {
             width: 90vh;
-            height:55vh;
+            height: 55vh;
             background-size: cover;
-            
         }
     }
     .infoDet {
@@ -538,7 +564,7 @@ footer {
             margin-bottom: 20px;
             a {
                 border: none;
-                div{
+                div {
                     font-weight: 300;
                     background: $naranja;
                     color: #fff;
@@ -550,7 +576,6 @@ footer {
             }
         }
     }
-
 }
 
 .flex-cont-index {

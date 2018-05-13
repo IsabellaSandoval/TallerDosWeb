@@ -35,6 +35,27 @@ app.get('/genetica/terneras', (req, res) => {
 
     var ternerasCollection = db.collection('Terneras').find();
 
+    //Filtro por precio
+    if (req.query.min && req.query.max)
+        ternerasCollection.filter({
+            precio: {
+                $gte: parseInt(req.query.min),
+                $lte: parseInt(req.query.max)
+
+            }
+        });
+
+
+        //Filtro por edad
+    if (req.query.min_ed && req.query.max_ed)
+    ternerasCollection.filter({
+        edad: {
+            $gte: parseInt(req.query.min_ed),
+            $lte: parseInt(req.query.max_ed)
+
+        }
+    });
+
     ternerasCollection.toArray((err, result) => {
 
         res.render('VisualizacionArticulos', {
@@ -59,4 +80,10 @@ app.get('/genetica/terneras/:id', (req, res) => {
             });
         });
 
+});
+
+
+//Checkout
+app.get('/checkout', (req, res) => {
+    res.render('checkout');
 });

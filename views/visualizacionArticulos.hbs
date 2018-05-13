@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EL SAMÁN</title>
     <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/multirange.css">
     <link rel="icon" type="image/png" href="/imagenes/icono2.ico" />
 
     <!-- Font Awesome -->
@@ -39,7 +40,7 @@
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn">GENÉTICA</button>
+                    <button class="dropbtn" style="background:#F7931E !important; color:#fff">GENÉTICA</button>
                     <div class="dropdown-content">
                         <a href="/genetica/terneras">Embriones</a>
                         <a href="/genetica/terneras">Terneras</a>
@@ -51,6 +52,15 @@
                 <div class="dropdown">
                     <button class="dropbtn">CONTACTO</button>
                 </div>
+
+                <div class="dropdown">
+                    <a href="/checkout">
+                        <button class="dropbtn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </a>
+                </div>
+                
             </div>
         </nav>
     </header>
@@ -94,7 +104,7 @@
 
                     <div class="tipo">
                         <label class="container">Todos
-                            <input type="radio" checked="checked" name="radio">
+                            <input type="radio" name="radio">
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">Embrión
@@ -102,7 +112,7 @@
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">Ternera
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" checked="checked">
                             <span class="checkmark"></span>
                         </label>
                         <label class="container">Novilla
@@ -132,6 +142,27 @@
 
                 </article>
 
+                <article class="rango">
+                    <div class=" flex-container slidecontainer">
+                        <input type="range" min="0" max="12" value="0" class="slider" id="desde_edad">
+                        <input type="range" min="13" max="25" value="25" class="slider" id="hasta_edad">
+                    </div>
+                    <div class="flex-container">
+                        <p>Desde:
+                            <span id="desdeValor_edad"></span>
+                        </p>
+                        <p>Hasta:
+                            <span id="hastaValor_edad"></span>
+                        </p>
+                    </div>
+
+                    <div class="flex-container">
+                        <button class="filtroRango_edad">Buscar</button>
+                        <button class="borrarFiltros_edad">Borrar FIltros</button>
+                    </div>
+
+                </article>
+
                 <!-- Filtro por precio -->
                 <article class="flex-cont-index ver">
                     <div class="flex-item">
@@ -143,9 +174,29 @@
                             <i class="fas fa-caret-up"></i>
                         </button>
                     </div>
-
                 </article>
 
+
+                <article class="rango">
+                    <div class=" flex-container slidecontainer">
+                        <input type="range" min="0" max="500000" value="0" class="slider" id="desde">
+                        <input type="range" min="500000" max="1000000" value="1000000" class="slider" id="hasta">
+                    </div>
+                    <div class="flex-container">
+                        <p>Desde:
+                            <span id="desdeValor"></span>
+                        </p>
+                        <p>Hasta:
+                            <span id="hastaValor"></span>
+                        </p>
+                    </div>
+
+                    <div class="flex-container">
+                        <button class="filtroRango">Buscar</button>
+                        <button class="borrarFiltros">Borrar FIltros</button>
+                    </div>
+
+                </article>
 
 
 
@@ -235,6 +286,9 @@
             </div>
         </section>
     </footer>
+
+    <script src="/javascript/filtro_precio.js"></script>
+    <script src="/javascript/filtro_edad.js"></script>
 
 </body>
 
