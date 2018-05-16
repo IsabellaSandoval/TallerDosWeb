@@ -57,10 +57,11 @@
                     <a href="/checkout">
                         <button class="dropbtn">
                             <i class="fas fa-shopping-cart"></i>
+                            <span class="carrito">0</span>
                         </button>
                     </a>
                 </div>
-                
+
             </div>
         </nav>
     </header>
@@ -144,8 +145,8 @@
 
                 <article class="rango">
                     <div class=" flex-container slidecontainer">
-                        <input type="range" min="0" max="12" value="0" class="slider" id="desde_edad">
-                        <input type="range" min="13" max="25" value="25" class="slider" id="hasta_edad">
+                        <input type="range" min="0" max="7" value="0" class="slider" id="desde_edad">
+                        <input type="range" min="7" max="15" value="15" class="slider" id="hasta_edad">
                     </div>
                     <div class="flex-container">
                         <p>Desde:
@@ -225,10 +226,10 @@
                     <div class="flex-cont-index">
                         <p>Ver</p>
                         <div>
-                            <a>
+                            <a href="/genetica/terneras?sexo=Hembra">
                                 <i class="fas fa-mars"></i>
                             </a>
-                            <a>
+                            <a href="/genetica/terneras?sexo=Macho">
                                 <i class="fas fa-venus"></i>
                             </a>
                         </div>
@@ -239,7 +240,7 @@
             <section class="productos">
 
                 {{#each Terneras}}
-                <article>
+                <article data-id="{{this._id}}">
                     <a href="/genetica/terneras/{{_id}}">
 
                         <div class="img-info">
@@ -251,6 +252,7 @@
                             <h2>$ {{precio}}</h2>
                         </div>
                     </a>
+                    <button class="agregar">Planear Visita</button>
                 </article>
                 {{/each}}
             </section>
@@ -289,6 +291,9 @@
 
     <script src="/javascript/filtro_precio.js"></script>
     <script src="/javascript/filtro_edad.js"></script>
+    <script src="/javascript/cliente.js"></script>
+    <script src="/javascript/productos.js"></script>
+
 
 </body>
 

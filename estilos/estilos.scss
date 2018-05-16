@@ -451,7 +451,7 @@ footer {
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
         float: left;
         width: 300px;
-        height: 240px;
+        height: 260px;
         margin-bottom: 20px;
         margin-right: 2.5%;
         opacity: .85;
@@ -462,6 +462,9 @@ footer {
                 img {
                     width: 100%;
                 }
+            }
+            button{
+                text-align: center;
             }
             .info {
                 margin: 0;

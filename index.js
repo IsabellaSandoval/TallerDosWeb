@@ -46,15 +46,26 @@ app.get('/genetica/terneras', (req, res) => {
         });
 
 
-        //Filtro por edad
+    //Filtro por edad
     if (req.query.min_ed && req.query.max_ed)
-    ternerasCollection.filter({
-        edad: {
-            $gte: parseInt(req.query.min_ed),
-            $lte: parseInt(req.query.max_ed)
+        ternerasCollection.filter({
+            edad: {
+                $gte: parseInt(req.query.min_ed),
+                $lte: parseInt(req.query.max_ed)
 
-        }
-    });
+            }
+        });
+
+    //Filtro por sexo
+    if (req.query.sexo)
+        ternerasCollection.filter({
+            sexo: req.query.sexo
+        });
+
+        if (req.query.sexo)
+        ternerasCollection.filter({
+            sexo: req.query.sexo
+        });
 
     ternerasCollection.toArray((err, result) => {
 

@@ -1,58 +1,120 @@
 {
-    "terneras":[
-        {
-            "nombre": "Alana ",
-            "numero": "502",
-            "precio": 250000,
-            "imagen": "/imagenes/a.png",
-            "categoria": "Ternera",
-            "edad":"",
-            "sexo":"",
-            "nacimiento":"",
-            "semenDisp": "",
-            "descripcion":""
-        }
-        ,
-        {
-            "nombre": "Lupita",
-            "numero": "307",
-            "precio": 480900,
-            "imagen": "/imagenes/b.jpg"
-        }
-        ,
-        {
-            "nombre": "Duquesa",
-            "numero": "460",
-            "precio": 486000,
-            "imagen": "/imagenes/c.jpg"
-        }
-        ,
-        {
-            "nombre": "Chispa",
-            "numero": "215",
-            "precio": 657000,
-            "imagen": "/imagenes/a.png"
-        }
-        ,
-        {
-            "nombre": "Cariñosa",
-            "numero": "354",
-            "precio": 876000,
-            "imagen": "/imagenes/b.jpg"
-        }
-        ,
-        {
-            "nombre": "Manchas",
-            "numero": "654",
-            "precio": 154000,
-            "imagen": "/imagenes/c.jpg"
-        }
-        ,
-        {
-            "nombre": "Primavera",
-            "numero": "123",
-            "precio": 796000,
-            "imagen": "/imagenes/a.png"
-        }
-    ]
+    "terneras": [{
+        "nombre": "LN302",
+        "precio": 25468,
+        "imagen": "/imagenes/a.png",
+        "categoria": "Ternera de Levante PURA",
+        "sexo": "Hembra",
+        "nacimiento": "Lunes, 13 de Febrero de 2017",
+        "padre": "Evangelo del Primero",
+        "madre": "Toscana Minister Lizie",
+        "edad":5,
+        "descripcion": ""
+    }, {
+        "nombre": "LN029",
+        "precio": 256700,
+        "imagen": "/imagenes/b.jpg",
+        "categoria": "Ternera de Levante PURA",
+        "sexo": "Hembra",
+        "nacimiento": "Martes, 7 de Febrero de 2017",
+        "padre": "Evangelo del Primero",
+        "madre": "Toscana Minister Dinamita",
+        "edad":6,
+        "descripcion": ""
+    }, {
+        "nombre": "LN019",
+        "precio": 156780,
+        "imagen": "/imagenes/c.jpg",
+        "categoria": "Ternera de Levante PURA",
+        "sexo": "Hembra",
+        "nacimiento": "7 de Diciembre de 2016",
+        "padre": "Heartland Fastrack Thor-ET",
+        "madre": "Toscana Minister Dinamita T.E.",
+        "edad":9,
+        "descripcion": ""
+
+    }, {
+        "nombre": "LN049",
+        "precio": 597054,
+        "imagen": "/imagenes/49.jpg",
+        "categoria": "PURA",
+        "sexo": "Hembra",
+        "nacimiento": "27 de Octubre de 2016",
+        "padre": "Heartland Fastrack Thor-ET",
+        "madre": "Toscana Tequila Guajira",
+        "edad":12,
+        "descripcion": ""
+
+    }, {
+        "nombre": "018",
+        "precio": 785600,
+        "imagen": "/imagenes/18.jpg",
+        "categoria": "Novilla de Vientre PURA",
+        "sexo": "Macho",
+        "nacimiento": "22 de Diciembre de 2016",
+        "padre": "Tower Vue Prime Tequila-ET",
+        "madre": "Las Mercedes Louie Reina T.E.",
+        "edad":3,
+        "descripcion": ""
+
+    }, {
+        "nombre": "51",
+        "precio": 984506,
+        "imagen": "/imagenes/51.jpg",
+        "categoria": "Vaca PURA",
+        "sexo": "Macho",
+        "nacimiento": "25 de Mayo  de 2012",
+        "padre": "Tollernaars Impuls Louie 206-ET",
+        "madre": "HB Just Wait Elvira Electra",
+        "edad":7,
+        "descripcion": ""
+
+    }, {
+        "nombre": "311",
+        "precio": 1258600,
+        "imagen": "/imagenes/a.png",
+        "categoria": "PURA",
+        "sexo": "Hembra",
+        "nacimiento": "28 de Mayo  de 2012",
+        "padre": "Tollernaars Impuls Louie 260-ET",
+        "madre": "HB Connection Rebeca Rania-TE",
+        "edad":3,
+        "descripcion": ""
+
+    }, {
+        "nombre": "355",
+        "precio": 458700,
+        "imagen": "/imagenes/355.jpg",
+        "categoria": "PURA",
+        "sexo": "Macho",
+        "nacimiento": "19 de Octubre  de 2012",
+        "padre": "Tollernaars Impuls Louie 260-ET",
+        "madre": "HB Centurion Eugenia Eileen-TE",
+        "edad":7,
+        "descripcion": ""
+
+    }, {
+        "nombre": "354",
+        "precio": 250000,
+        "imagen": "/imagenes/354.jpg",
+        "categoria": "PURA",
+        "sexo": "Hembra",
+        "nacimiento": "10 de Diciembre  de 2012",
+        "padre": "Tollernaars Impuls Louie 260-ET",
+        "madre": "HB Centurion Eugenia Eileen-TE",
+        "edad":7,
+        "descripcion": ""
+
+    }, {
+        "nombre": "357",
+        "precio": 789520,
+        "imagen": "/imagenes/357.jpg",
+        "categoria": "Novilla de Vientre PURA",
+        "sexo": "Macho",
+        "nacimiento": "25 de Marzo de 2016",
+        "padre": "Heartland Fastrack Thor-ET",
+        "madre": "Las Mercedes Louie Eva T.E.",
+        "edad":5,
+        "descripcion": ""
+    }]
 }
