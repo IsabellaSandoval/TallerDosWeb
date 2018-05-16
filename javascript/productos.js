@@ -5,7 +5,7 @@ document.querySelectorAll('.agregar').forEach(function(button) {
         console.log(button.parentNode.parentNode.getAttribute('data-id'));
 
         if(arreglo.indexOf(id) >= 0){
-            console.log('paila');
+            console.log('Ya ha sido agregado con anterioridad');
             return;
         }
 
