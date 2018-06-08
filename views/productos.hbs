@@ -52,11 +52,11 @@
                     <button class="dropbtn">CONTACTO</button>
                 </div>
 
-               <div class="dropdown">
-                    <a href="/checkout">
+                <div class="dropdown">
+                    <a href="">
                         <button class="dropbtn">
                             <i class="fas fa-shopping-cart"></i>
-                                                    <span class="carrito">0</span>
+                            <span class="carrito">0</span>
 
                         </button>
                     </a>
@@ -68,7 +68,8 @@
     <div id="contenedor">
         <section class="atras">
             <div>
-                <a href="/genetica/terneras"><i class="fas fa-chevron-circle-left"></i>Volver a Terneras</a>
+                <a href="/genetica/terneras">
+                    <i class="fas fa-chevron-circle-left"></i>Volver a Terneras</a>
             </div>
         </section>
         <section class="flex-container produc">
@@ -79,25 +80,32 @@
             <article class="infoDet">
                 <div>
                     <h1>{{Ternera.nombre}}{{Ternera.numero}} - Ternero</h1>
-                    <p>{{Ternera.descripcion}} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, alias expedita. Odit animi libero veniam numquam architecto voluptas et aspernatur, reiciendis maxime dolor accusantium unde nam similique accusamus distinctio. Non?</p>
-                    <p><strong>Raza:</strong> Jersey</p>
-                    <p><strong>Categoría:</strong> {{Ternera.categoria}}</p>
-                    <p><strong>Fecha de Nacimiento:</strong> {{Ternera.nacimiento}}</p>
-                    <p><strong>Sexo:</strong> {{sexo}}</p>
-                    <p><strong>Semen Disponible:</strong> {{semenDisp}}</p>
+                    <p>{{Ternera.descripcion}} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, alias
+                        expedita. Odit animi libero veniam numquam architecto voluptas et aspernatur, reiciendis maxime dolor
+                        accusantium unde nam similique accusamus distinctio. Non?</p>
+                    <p>
+                        <strong>Raza:</strong> Jersey</p>
+                    <p>
+                        <strong>Categoría:</strong> {{Ternera.categoria}}</p>
+                    <p>
+                        <strong>Fecha de Nacimiento:</strong> {{Ternera.nacimiento}}</p>
+                    <p>
+                        <strong>Sexo:</strong> {{sexo}}</p>
+                    <p>
+                        <strong>Semen Disponible:</strong> {{semenDisp}}</p>
                     <a href="">VER GENEALOGÍA</a>
                     <p class="precio">${{Ternera.precio}}</p>
                 </div>
                 <div class="visita">
                     <a href="">
                         <div>
-                        PLANEAR VISITA
+                            PLANEAR VISITA
                         </div>
                     </a>
                 </div>
             </article>
         </section>
-        
+
     </div>
 
     <footer>
@@ -123,7 +131,7 @@
         </section>
     </footer>
     <script src="/javascript/cliente.js"></script>
-    
+
 
 </body>
 

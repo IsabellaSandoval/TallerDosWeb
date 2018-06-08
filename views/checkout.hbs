@@ -53,9 +53,10 @@
                 </div>
 
                 <div class="dropdown">
-                    <a href="/checkout">
+                    <a href="">
                         <button class="dropbtn">
                             <i class="fas fa-shopping-cart"></i>
+                            <span class="carrito">0</span>
 
                         </button>
                     </a>
@@ -64,7 +65,46 @@
         </nav>
     </header>
 
-      <footer>
+
+
+    <div id="contenido">
+
+        <section class="inicio">
+            <article class="mapa_det-prod">
+                <p class="mapaSitio">
+                    <a href="/index">PREX </a> /
+                    <a href="/checkout">CHECK OUT </a>
+                </p>
+            </article>
+        </section>
+
+
+
+        <section class="checkout">
+            <table class="lista">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Fecha</th>
+                    <th>Total de Días</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </table>
+
+            <table>
+                <tr class="total">
+                    <th colspan="3"></th>
+                    <th>TOTAL</th>
+                    <th title="Total a pagar">5'548.256</th>
+                    <th></th>
+                </tr>
+            </table>
+
+        </section>
+    </div>
+
+    <footer>
         <section class="contacto">
             <h3>MANTENTE EN CONTACTO</h3>
             <p>Suscríbete para recibir nuestra última información</p>
@@ -86,6 +126,9 @@
             </div>
         </section>
     </footer>
+
+    <script src="/javascript/cliente.js"></script>
+    <script src="/javascript/chechkout.js"></script>
 
 </body>
 

@@ -15,18 +15,24 @@ app.use(express.static('public'));
 
 
 // Conectarse a Base de Datos
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://elsamandb-kszmw.mongodb.net/ElSaman', 
+{
+    auth: {
+        user: 'Isabella',
+        password: 'contraseña123'
+    }
+}, function (err, client) {
     if (err) throw err;
 
     db = client.db('ElSaman');
 
     // Iniciar servidor
-    app.listen(5000);
+    app.listen(process.env.PORT || 5000);
 });
 
 
 // Dirección del index
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');
 });
 
@@ -62,7 +68,7 @@ app.get('/genetica/terneras', (req, res) => {
             sexo: req.query.sexo
         });
 
-        if (req.query.sexo)
+    if (req.query.sexo)
         ternerasCollection.filter({
             sexo: req.query.sexo
         });
@@ -91,10 +97,4 @@ app.get('/genetica/terneras/:id', (req, res) => {
             });
         });
 
-});
-
-
-//Checkout
-app.get('/checkout', (req, res) => {
-    res.render('checkout');
 });
